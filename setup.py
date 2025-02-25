@@ -14,6 +14,7 @@ def install_requirements():
     all_requirements.extend(read_requirements('src/LdapRelayScan/requirements.txt'))
     all_requirements.extend(read_requirements('src/targetedKerberoast/requirements.txt'))
     all_requirements.extend(read_requirements('src/PKINITtools/requirements.txt'))
+    all_requirements.extend(read_requirements('src/pxethiefy/requirements.txt'))
 
     # ntlm_theft
     all_requirements.append("xlsxwriter")
@@ -63,6 +64,7 @@ setup(
             "forest-keytab.py=src.start:start_keytab",
             "forest-gettrustinfo.py=src.start:start_gettrustinfo",
             "LAPSDumper.py=src.start:start_lapsdumper",
+            "pxethiefy.py=src.start:start_pxethiefy",
         ],
     },
     install_requires=install_requirements(),

@@ -204,3 +204,10 @@ def start_lapsdumper():
     args = sys.argv[1:]
     command = [sys.executable, str(script_path)] + args
     subprocess.run(command)
+
+# pxethiefy
+def start_pxethiefy():
+    script_path = Path(__file__).resolve().parent / "pxethiefy" / "pxethiefy.py"
+    args = sys.argv[1:]
+    command = [sys.executable, str(script_path)] + args
+    subprocess.run(command)
